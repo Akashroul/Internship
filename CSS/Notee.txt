@@ -1,0 +1,141 @@
+CSS stands for Cascading Style Sheet.
+CSS is a style sheet language use for describing the presentation of a document written in a markup language.(HTML)
+CSS is used to add style to a web page.
+There are 3 way to add style or css of a web page.
+Inline css, Internal css, External css
+
+INLINE CSS
+Adding style for a individual element with the help of style attribute.
+Syntax : <p style="font-size: 30px; font-weight:700; ">
+
+Internal CSS
+Used to add style multiple elements writing general styles with the help of style tag inside head tag.
+We need select us the select/target the element which we need to change to style.
+Syntax: <style> .className{
+    font-size: 20px;
+}
+#idName{
+    background-color: red;
+}
+</style>
+ Writing CSS in a separate CSS file and then connecting it to the HTML document which the help of Linked Tag.
+ We use linked tag inside the head tag to connect the External CSS.
+ Syntax: <link rel="stylesheet" href="./style.css">
+ Example: #heading{
+        background-color: blueviolet;
+        font-size: 30px;
+    }
+
+    SELECTORS IN CSS
+    CSS selectors are used to select the HTML element that we want to change style.
+    There are 6 types of selectors are there in CSS.
+
+    1. UNIVERSAL SELECTORS
+    It's used to select all the elements in HTML document and it's denoted by "*".
+    Example: *{
+        font-size: 25px;
+        background-color: lightblue;
+    }
+
+    2.ID SELECTORS
+    It's select the HTML element best on the given ID name.
+    ID name can be provided by using "ID" attribute.
+    ID name should be unique in a HTML document.
+    To select the ID names in CSS we use "#", which acts as ID selectors.
+    
+    3. CLASS SELECTORS
+    It's select HTML elements based on it given class name.
+    Class name should be provided into class attribute, class name should be duplicate.
+    To select the class name in css we use dot(.) thats acts as class selectors.
+
+    4.ELEMENT SELECTORS
+    Its used to select the elements based on their tag name.
+    Element selector selects all the elements which the specific tag name in the entire document.
+    Example: p {
+        background-color: bisque;
+    }
+
+    5.DESCENDANT SELECTORS
+    Its used to select specific child element within the parent element.
+
+    6.GROUP SELECTORS
+    Its used to select multiple elements in the HTML document.
+    Example: .box p, #head, #heading, .para{
+        background-color: blue;
+    }.box p, #head, #heading, .para{
+        background-color: blue;
+    }
+
+    # Flex-box:-
+-This property is used to structure the elements in row wise or column wise by giving space allocation for individual elements within the flex area.
+Properties:-
+
+1. flex-direction:- It specifies from which direction the elements should be aligned.
+Values:-
+flex-direction: row/row-reverse/column/column-reverse ;
+
+2. justify-content:- This is used to align the elements horizontally in the flex area.
+Values:-
+justify-content: start/center/end/space-between/space-around/space-evenly
+
+3. align-items:- This property is used to align the items vertically in flex area.
+Values:-
+align-items: flex-start/center/flex-end ;
+
+# Grid-Layout:-
+-CSS grid layout is a two dimentional layout system for the web.
+-A grid is a collection of horizontal & vertical lines creating a pattern against which we can line up our design element. They help us to create designs where element don't jumps around or change width as we move from page to page.
+Properties:-
+display: grid;
+grid-template-column: repeat(4,1fr)/ 3 4 5;
+grid-gap : 20px/ 30px...
+grid-template-rows: 100px/ 200px;
+
+# CSS units :-
+1. px (pixel) - fixed    1px=1/96 inch
+2. % (percentage) - percentage is fully depends upon their parent element
+3. vh (viewport height) & vw (viewport width) - it will increases or decrease their size as per the screen size.
+4. vmax - if the screen size can be squized to a phone screen so our content can be small it break that and create a new line of content.
+5. em & rem (root units of CSS) em - we can handle all tag by a root element/tag so that it would be fesiable for our content. (relative units, relative to any one) rem - (1rem = 16px)
+
+# Transform Properties:-
+-Transform properties are used to transform an element from one form to another form or to move from one position to another position.
+1. Rotate:- It is used to rotate an object in clockwise or anti-clockwise direction.
+-To rotate an element we use degree(deg) as an unit.
+Properties:- 
+    rotateX(deg) -It rotates an element on x-axis.
+    rotateY(deg) -It rotates an element on y-axis.
+    rotateZ(deg) -It rotates an element on z-axis.
+
+2. Skew:- It distorts point of an element by a certain angle in horizontal or vertical direction.
+Properties:- 
+    horizontal:- skewX()
+    vertical:- skewY()
+
+3. Scale:- It allows us to resize an element compared to its original size.
+-scale>1 will increase the size and scale<1 will decrease the size of an element.
+Properties:- 
+    scale() -It will change the size in all direction
+    scaleX() -It will change the size in x-axis or horizontally.
+    scaleY() -It will change the size in y-axis or vertically.
+
+4. Translate:- It allows us to change the position of an element from it's original position to another position over the x-axis and y-axis. 
+-Translate value is provided in pixels.
+Properties:- 
+    translateX() -It translate the element over x-axis, from left to right or right to left.
+    translateY() -It translate the element over y-axis, from top to bottom or bottom to top.
+    translate(val1, val2) -It translate their element on both axis.
+
+# Transition :- (to change the state)
+transition enables us to define the transition between two states of an element smoothly.
+Properties:- 
+transition-property: property for which you want to add transition.
+    Example: (font-size, color, bg color,transform, all)
+transition-duration:time to change from one state from another state
+    Example: 2s/3s/10s ...etc    
+transition-timing-function:to control the speed
+    values: ease-in/ease-out/linear/steps(5)
+transition-delay:delay to start the transition
+    value: 2s/3s/10s ...etc
+(or)
+transition: property-name duration timing-function delay.

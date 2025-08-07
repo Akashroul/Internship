@@ -1,0 +1,75 @@
+.rotate{
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    /* transform: rotateX(60deg);
+    transform: rotateY(50deg);
+    transform: rotateZ(45deg); */
+    margin: 100px;
+    transform: rotate(45deg);
+}
+.scale{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    margin: 100px;
+    /* transform: scaleX(1.5);
+    transform: scaleY(1.5);
+    transform: scale(1.5,2); */
+}
+.translate{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    margin: 100px;
+    /* transform: translateX(50px); */
+    /* transform: translateY(100px); */
+    /* transform: translate(100px, 50px); */
+    /* transform: translate(50px, 100px); */
+}
+
+.skew{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    margin: 100px;
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+    /* transform: skew(30deg, 20deg); */
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: lightgray;
+    margin: 100px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+}
+
+.box:hover{
+    transform: scale(1.5);
+}
+
+#btn{
+   background-color: green;
+   padding: 15px 20px;
+   border-radius: 6px;
+   border: none;
+   cursor: pointer;
+   color: white;
+   font-size: 20px;
+   transition: transform 0.3s ease-in-out;
+   margin: 100px;
+}
+
+.box:hover {
+    background-color: rgb(10, 183, 10);
+}
+
+.box:active {
+    background-color: rgb(1, 101, 1);
+    transform: scale(0.9);
+}
