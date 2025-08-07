@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background-color: brown;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: start; */
+    justify-content: center;
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: end; */
+    align-items: center;
+    /* align-items: start; */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.child {
+    background-color: seagreen;
+    height: 100px;
+    width: 100px;
+}
+
+nav {
+    height: 80px;
+    background-color: white;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.282);
+}
+
+nav h1 {
+    font-size: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul select {
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+nav button {
+    padding: 10px 35px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}

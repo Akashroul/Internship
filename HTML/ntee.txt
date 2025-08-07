@@ -1,0 +1,32 @@
+Grid LAYOUT
+Grid layout is a two dimentional layout system for the web .
+A grid is a collection of horinzental and vertical lines then creating a pattern agenst which we can lineup our design element.
+They help us to create design ehere element dont jumps around or change width as we move dfrom page to page.
+
+PROPERTIES:
+    display: grid;
+    /* grid-template-columns: 200px 250px 200px; */
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 20px;
+
+ CSS UNITS
+1.pixel()
+Thix fixedx for each an every screen .
+  1 pixel = 1/96inch
+2.%
+Percentage(%)
+Percentage is fully depent upon their parent elements.
+
+3.VH(viewport hight)&VW(viewport width)
+ It depnds the size as per screen size(viewport)
+
+ 4.vmax
+  It compares betweeen vh & vw , which value will be greater 
+
+  5.EM & REM
+   They are relative lenght units usd for sizing elements perticularly for typography.
+   EM unit is relativee to font size of the parent element 
+   REM unit is relative to font size of root element or defaut font size.
+   1rem=16px.

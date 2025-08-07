@@ -1,0 +1,111 @@
+#heading {
+    color: orangered;
+    font-size: 35px;
+}
+
+#heading:hover {
+    color: green;
+}
+
+.btn {
+    background-color: seagreen;
+    font-size: 30px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 109, 9);
+    color: white;
+}
+
+.btn:active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#name {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 40px;
+}
+
+#name:focus {
+    background-color: white;
+    color: black;
+}
+
+#name::placeholder {
+    color: red;
+}
+
+.para {
+    font-size: 20px;
+    color: red;
+}
+
+.para::first-letter {
+    color: green;
+    font-size: 40px;
+}
+
+.para::first-line {
+    font-size: 30px;
+}
+
+.para::before {
+    content: "Hello";
+    color: blue;
+}
+
+.para::after {
+    content: "Hello";
+    color: blue;
+}
+
+.box {
+    background-color: blueviolet;
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    color: red;
+    /* padding: 20px 10px; */
+    /* padding: 20px 10px 30px; */
+    /* padding: 20px 10px 30px 40px; */
+    /* padding-bottom: 50px; */
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: green; */
+    border: 10px double black;
+    /* margin: 20px; */
+    /* margin: 20px 40px; */
+    /* margin: 20px 40px 10px; */
+    margin: 20px 40px 10px 30px;
+    /* margin-top: 50px; */
+    /* box-sizing: content-box; */
+    /* box-sizing: border-box; */
+    box-shadow: 10px -10px 10px black;
+    text-shadow: 2px 2px 5px black;
+}
+
+.block {
+    display: block;
+    background-color: rebeccapurple;
+    width: 200px;
+    margin: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: brown;
+    width: 200px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: chartreuse;
+    width: 200px;
+}
+
+.none {
+    display: none;
+    background-color: darkslategray;
+}

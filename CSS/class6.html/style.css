@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color:white;
+  color:white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+header {
+  background-color: #0f2c64;
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+/* authentication button */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.try-free {
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-header {
+  background-color: #0f2c64;
+  padding: 60px 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: white;
+}
+
+.text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.;
+  max-width: 400px;
+}
+
+.main-image {
+  width: 452px;
+  height: 250px;
+  background-color: #bdd7f3;
+  border-radius: 8px;
+}
+
+
+ body {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+} 
+
+ Project Section 
+.project-section {
+  padding: 60px 0;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-box {
+  max-width: 500px;
+}
+
+.text-box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+} 
+
+.image-box {
+  width: 300px;
+  height: 200px;
+  background-color: #bdd7f3;
+  border-radius: 8px;
+}
+
+ Button 
+ .btn {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* 
+Work Section
+ .work-section {
+  padding: 60px 0;
+  text-align: center;
+}  */
+
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 2px dashed #d0d0d0;
+  border-radius: 50%;
+} */
+
+ .center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.text-work {
+  margin-top: 40px;
+}
+
+.text-work h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.text-work p {
+  max-width: 500px;
+  margin: 0 auto 20px;
+} 

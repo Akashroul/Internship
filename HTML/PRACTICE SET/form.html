@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Step 1</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+        }
+        .login-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+        input[type="password"], input[type="button"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="button"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Enter Password to Continue</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <input type="button" value="Next" onclick="checkPassword()">
+</div>
+
+<script>
+    function checkPassword() {
+        const pwd = document.getElementById("password").value;
+        if (pwd === "1234") {
+            window.location.href = "form.html";  // Go to next page
+        } else {
+            alert("Incorrect Password!");
+        }
+    }
+</script>
+
+</body>
+</html>
