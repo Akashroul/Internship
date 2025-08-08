@@ -1,0 +1,26 @@
+
+ .grid-container {
+        display: grid;
+        grid-template-columns: ;
+        grid-template-rows: ;
+        gap: 10px;
+        padding: 10px;
+        background-color: #eee;
+      }
+
+      .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .item1 { background-color: crimson; }
+      .item2 { background-color: royalblue; }
+      .item3 { background-color: seagreen; }
+      .item4 { background-color: orange; }
+      .item5 { background-color: purple; }
+      .item6 { background-color: teal; }

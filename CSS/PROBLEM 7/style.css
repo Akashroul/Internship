@@ -1,0 +1,22 @@
+.block-div{
+    display: black;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 10PX;
+    border: 1px solid black;
+}
+
+.inline-div{
+    display: inline;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.inline-block-div{
+    display: inline-block;
+    background-color: solid palevioletred;
+    padding: 20px;
+    margin: 10px;
+    border :1px solid black;
+}

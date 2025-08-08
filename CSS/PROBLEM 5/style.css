@@ -1,0 +1,7 @@
+#main-box{
+     height: 200px;
+    width: 300px;
+    background-color: lightgreen;
+    border: 1px solid blue;
+   text-align: center;
+}
