@@ -8,5 +8,7 @@
     display: flex;
 }
 .logo {
-
-}
+     display: flex;
+      text-align: center;
+      
+    }
