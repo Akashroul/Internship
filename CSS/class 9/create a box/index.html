@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Box</title>
+    <style>
+        .box{
+            height: 600px;
+            width: 300px;
+            background-color: beige;
+        }
+        .ball {
+            background-color: rgb(221, 94, 10);
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            animation: ballDrop 1s ease-in infinite alternate;
+        }
+
+        @keyframes drop{
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(400px);
+            }
+        }
+        @keyframes ballDrop{
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(100px)
+            }
+            50%{
+                transform: translateY(200px);
+            }
+              75%{
+                transform: translateY(300px);
+            }
+              100%{
+                transform: translateY(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

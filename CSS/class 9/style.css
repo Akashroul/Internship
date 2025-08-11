@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.spinner {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid black;
+    border-top: 10px solid white;
+    /* animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse; */
+    animation: spin 2s ease 10 normal;
+}
+
+.box {
+    height: 600px;
+    width: 400px;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+.ball {
+    background-color: cadetblue;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: ballDrop 1s ease-in infinite alternate;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(400px);
+    }
+}
+
+@keyframes ballDrop {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(100px);
+    }
+
+    50% {
+        transform: translateY(200px);
+    }
+
+    75% {
+        transform: translateY(300px);
+    }
+
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+
+.container {
+    height: 600px;
+    width: 900px;
+    background-color: red;
+}
+
+.hero {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    background-color: burlywood;
+    padding: 20px 40px;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 45px;
+    color: blueviolet;
+
+}
+
+.left p {
+    font-size: 22px;
+}
+
+.right {
+    width: 50%;
+}
+
+.right img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    .container {
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+    .container {
+        height: 500px;
+        /* width: 600px; */
+        width: 100%;
+        max-width: 600px;
+        background-color: green;
+    }
+
+    .hero {
+        height: 260px;
+        padding: 10px 20px;
+    }
+
+    .left h1 {
+        font-size: 35px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .container {
+        height: 700px;
+        width: 700px;
+        background-color: yellow;
+    }
+
+    .hero {
+        height: 360px;
+    }
+
+    .left h1 {
+        font-size: 40px;
+    }
+
+    .left p {
+        font-size: 20px;
+    }
+}
